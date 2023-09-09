@@ -1,0 +1,19 @@
+{
+	"Mammals":	{
+		"Dogs":	[
+			
+		],
+		"Orungutans":	[
+			{
+				"ArborealLifstyle":	true,
+				"OpposableThumbs":	true,
+				"HighIntelligence":	233,
+				"SolitaryBehavior":	true,
+				"SlowReproductiveRate":	true,
+				"Species":	3,
+				"Name":	"ty",
+				"Age":	25
+			}
+		]
+	}
+}

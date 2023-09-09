@@ -1,0 +1,15 @@
+{
+	"Mammals":	{
+		"Dogs":	[
+			{
+				"Breed":	"аа",
+				"Species":	1,
+				"Name":	"апа",
+				"Age":	34
+			}
+		],
+		"Orungutans":	[
+			
+		]
+	}
+}

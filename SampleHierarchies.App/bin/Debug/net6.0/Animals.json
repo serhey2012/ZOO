@@ -1,0 +1,19 @@
+{
+	"Mammals":	{
+		"Dogs":	[
+			
+		],
+		"Orungutans":	[
+			{
+				"ArborealLifstyle":	true,
+				"OpposableThumbs":	true,
+				"HighIntelligence":	200,
+				"SolitaryBehavior":	true,
+				"SlowReproductiveRate":	true,
+				"Species":	3,
+				"Name":	"hr",
+				"Age":	25
+			}
+		]
+	}
+}
