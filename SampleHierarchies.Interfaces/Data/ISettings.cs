@@ -37,6 +37,11 @@ public interface ISettings
     /// </summary>
     string OrungutanScreenColor { get; set; }
 
+    /// <summary>
+    /// the color of the Elephant Screen
+    /// </summary>
+    string ElephantScreenColor { get; set; }
+
     #endregion // Interface Members
 }
 

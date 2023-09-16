@@ -55,6 +55,7 @@ internal static class Program
                 services.AddSingleton<MainScreen, MainScreen>();
                 services.AddSingleton<DogsScreen, DogsScreen>();
                 services.AddSingleton<OrangutanScreen, OrangutanScreen>();
+                services.AddSingleton<ElephantScreen, ElephantScreen>();
                 services.AddSingleton<AnimalsScreen, AnimalsScreen>();
                 services.AddSingleton<MammalsScreen, MammalsScreen>();
                 services.AddSingleton<CreatSettingsScreen, CreatSettingsScreen>();

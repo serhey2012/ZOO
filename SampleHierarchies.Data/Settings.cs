@@ -15,9 +15,10 @@ namespace SampleHierarchies.Data
         public string? MammalSpeciesColor { get; set; }
         public string? DogsScreenColor { get; set; }
         public string? OrungutanScreenColor { get; set; }
+        public string? ElephantScreenColor { get; set; }
 
 
-        public Settings(string? version, string? mainScreenColor, string? animalsScreenColor, string? mammalSpecies, string? dogsScreenColor, string? orungutanScreenColor)
+        public Settings(string? version, string? mainScreenColor, string? animalsScreenColor, string? mammalSpecies, string? dogsScreenColor, string? orungutanScreenColor, string? elephantScreenColor)
         {
             Version = version;
             MainScreenColor = mainScreenColor;
@@ -25,15 +26,17 @@ namespace SampleHierarchies.Data
             MammalSpeciesColor = mammalSpecies;
             DogsScreenColor = dogsScreenColor;
             OrungutanScreenColor = orungutanScreenColor;
+            ElephantScreenColor = elephantScreenColor;
         }
 
-        public Settings(string? mainScreenColor, string? animalsScreenColor, string? mammalSpecies, string? dogsScreenColor, string? orungutanScreenColor)
+        public Settings(string? mainScreenColor, string? animalsScreenColor, string? mammalSpecies, string? dogsScreenColor, string? orungutanScreenColor, string? elephantScreenColor)
         {
             MainScreenColor = mainScreenColor;
             AnimalsScreenColor = animalsScreenColor;
             MammalSpeciesColor = mammalSpecies;
             DogsScreenColor = dogsScreenColor;
             OrungutanScreenColor = orungutanScreenColor;
+            ElephantScreenColor = elephantScreenColor;
         }
 
         public Settings()

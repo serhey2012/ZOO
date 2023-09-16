@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "SampleHierarchies.Gui/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Interfaces": "1.0.0",
           "SampleHierarchies.Services": "1.0.0"
         },
@@ -25,6 +26,7 @@
       },
       "SampleHierarchies.Data/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Interfaces": "1.0.0"
         },
         "runtime": {
@@ -32,17 +34,24 @@
         }
       },
       "SampleHierarchies.Enums/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "runtime": {
           "SampleHierarchies.Enums.dll": {}
         }
       },
       "SampleHierarchies.Helpers/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "runtime": {
           "SampleHierarchies.Helpers.dll": {}
         }
       },
       "SampleHierarchies.Interfaces/1.0.0": {
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Enums": "1.0.0"
         },
         "runtime": {

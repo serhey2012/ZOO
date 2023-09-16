@@ -42,7 +42,8 @@ namespace SampleHierarchies.Gui
                     new ScreenLineEntry { Text = "2. Modify existing orungutan" }
                 };
 
-                ScreenRender(list, _dataService.settings.OrungutanScreenColor);
+                ScreenDefinitionJson = _dataService.settings.OrungutanScreenColor;
+                ScreenRender(list);
 
                 SwitchHandler();
 
@@ -213,8 +214,6 @@ namespace SampleHierarchies.Gui
             Console.Write("What is the Orungutan's age? ");
             string? ageAsString = Console.ReadLine();
 
-
-
             Console.Write("What is the orungutan's arboreal lifstyle? Answer yes or no : ");
             bool arborealLifstyle = false;
             string? AnswerForArborealLifstyle = Console.ReadLine().ToLower();
@@ -222,7 +221,6 @@ namespace SampleHierarchies.Gui
             {
                 arborealLifstyle = true;
             }
-
 
             Console.Write("What is the orungutan's opposable thumbs? Answer yes or no : ");
             bool opposableThumbs = false;
@@ -232,10 +230,8 @@ namespace SampleHierarchies.Gui
                 opposableThumbs = true;
             }
 
-
             Console.Write("What is the orungutan's high intelligence? ");
             string? highIntelligenceAsString = Console.ReadLine();
-
 
             Console.Write("What is the orungutan's solitary behavior? Answer yes or no : ");
             bool solitaryBehavior = false;
@@ -245,7 +241,6 @@ namespace SampleHierarchies.Gui
                 solitaryBehavior = true;
             }
 
-
             Console.Write("What is the orungutan's slow reproductive rate? Answer yes or no : ");
             bool slowReproductiveRate = false;
             string? AnswerslowReproductiveRate = Console.ReadLine();
@@ -253,10 +248,6 @@ namespace SampleHierarchies.Gui
             {
                 slowReproductiveRate = true;
             }
-
-
-
-
 
             if (name is null)
             {
@@ -266,6 +257,27 @@ namespace SampleHierarchies.Gui
             {
                 throw new ArgumentNullException(nameof(ageAsString));
             }
+            if (highIntelligenceAsString is null)
+            {
+                throw new ArgumentNullException(nameof(highIntelligenceAsString));
+            }
+            //if (arborealLifstyle is null)
+            //{
+            //    throw new ArgumentNullException(nameof(arborealLifstyle));
+            //}
+            //if (opposableThumbs is null)
+            //{
+            //    throw new ArgumentNullException(nameof(opposableThumbs));
+            //}
+            //if (solitaryBehavior is null)
+            //{
+            //    throw new ArgumentNullException(nameof(solitaryBehavior));
+            //}
+            //if (slowReproductiveRate is null)
+            //{
+            //    throw new ArgumentNullException(nameof(slowReproductiveRate));
+            //}
+
 
 
             int highIntelligence = Int32.Parse(highIntelligenceAsString);

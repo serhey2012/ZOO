@@ -30,6 +30,8 @@ public abstract class Screen
     /// </summary>
     public string ScreenColor { get; set; }
 
+    public string ScreenDefinitionJson { get; set; }
+
     #region ctor
     /// <summary>
     /// ctor
@@ -66,15 +68,13 @@ public abstract class Screen
 
     #region ScreenRender
 
-    public void ScreenRender(List<ScreenLineEntry> Lines , string ColorOfScreen)
+    public void ScreenRender(List<ScreenLineEntry> Lines )
     {
 
         if (screenLines.Count == 0)
         {
             screenLines.AddRange(Lines);
         }
-
-        ScreenColor = ColorOfScreen;
 
         Console.Clear();
 
@@ -99,7 +99,7 @@ public abstract class Screen
     /// <param name="ListOfLines"></param>
     public void ScreenLinesRender(List<ScreenLineEntry> ListOfLines)
     {
-        ScreenColorHandlerRender();
+        ScreenColoreDefinition();
 
         CursorHandler(ListOfLines, "Red");
 
@@ -117,20 +117,19 @@ public abstract class Screen
             Console.ResetColor();
         }
 
-        ScreenColorHandlerRender();
+        ScreenColoreDefinition();
 
         Console.WriteLine();
         Console.WriteLine("Your available choices are:");
+    
     }
 
-    public string ScreenColorHandlerRender()
+    public string ScreenColoreDefinition()
     {
-        //var colorOfScreen = ScreenColor;
-        if (Enum.TryParse(ScreenColor, out ConsoleColor color))
+        if (Enum.TryParse(ScreenDefinitionJson, out ConsoleColor color))
         {
             Console.ForegroundColor = color;
-            //return colorOfScreen;
-            return ScreenColor;
+            return ScreenDefinitionJson;
         }
         return null;
     }
@@ -141,7 +140,7 @@ public abstract class Screen
         {
             if (i != currentField)
             {
-                ListOfLines[i].ForegroundColor = ScreenColorHandlerRender();
+                ListOfLines[i].ForegroundColor = ScreenColoreDefinition();
             }
         }
         ListOfLines[currentField].ForegroundColor = ColorOfCursor;
@@ -194,7 +193,7 @@ public abstract class Screen
         {
             currentField--;
 
-            ScreenRender(screenLines, ScreenColor);
+            ScreenRender(screenLines);
 
             Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
         }
@@ -206,7 +205,7 @@ public abstract class Screen
         {
             currentField++;
 
-            ScreenRender(screenLines, ScreenColor);
+            ScreenRender(screenLines);
 
             Console.WriteLine($"You have moved to the screen: {currentField}. --- {screenLines[currentField].Text}");
         }
@@ -221,6 +220,4 @@ public abstract class Screen
     #endregion
 
     #endregion // Public Methods
-
-    public string? ScreenDefinitionJson { get; set; }
 }

@@ -14,17 +14,11 @@ public class SettingsService : ISettingsService
     #region ISettings Implementation
 
     public IDataService _dataService;
-
     // public ISettings Settings { get; set;  }
-
-
     public SettingsService(IDataService dataService)
     {
         _dataService = dataService;
     }
-
-
-
 
     /// <inheritdoc/>
     public ISettings? Read(string jsonPath)
@@ -44,21 +38,15 @@ public class SettingsService : ISettingsService
 
             //Console.WriteLine(_dataService.settings.OrungutanScreenColor);
 
-
             return settings;
-
 
         }
         catch (Exception ex)
         {
             Debug.WriteLine(ex);
         }
-
         return new Settings();
     }
-
-
-
     /// <inheritdoc/>
     public void Write(ISettings settings, string jsonPath)
     {
@@ -68,7 +56,6 @@ public class SettingsService : ISettingsService
             string jsonContent = JsonConvert.SerializeObject(settings);
             string jsonContentFormatted = jsonContent.FormatJson();
             File.WriteAllText(jsonPath, jsonContentFormatted);
-
             Read(jsonPath);
         }
         catch (Exception ex)
@@ -76,20 +63,5 @@ public class SettingsService : ISettingsService
             Debug.WriteLine(ex);
         }
     }
-
-    #endregion // ISettings Implementation
-
-    //public SettingsService()
-    //{
-    //    Settings = new Settings();
-    //}
-
-
-
-    public void SetttingColor()
-    {
-
-    }
-
-
+    #endregion
 }

@@ -46,3 +46,15 @@ C:\Users\User\Downloads\ООП\Poland_Work--main\SampleHierarchies.Enums\obj\Deb
 C:\Users\User\Downloads\ООП\Poland_Work--main\SampleHierarchies.Enums\obj\Debug\net6.0\refint\SampleHierarchies.Enums.dll
 C:\Users\User\Downloads\ООП\Poland_Work--main\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.pdb
 C:\Users\User\Downloads\ООП\Poland_Work--main\SampleHierarchies.Enums\obj\Debug\net6.0\ref\SampleHierarchies.Enums.dll
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\bin\Debug\net6.0\SampleHierarchies.Enums.deps.json
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\bin\Debug\net6.0\SampleHierarchies.Enums.dll
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\bin\Debug\net6.0\SampleHierarchies.Enums.pdb
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.AssemblyInfo.cs
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.dll
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\refint\SampleHierarchies.Enums.dll
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\SampleHierarchies.Enums.pdb
+C:\Users\User\Downloads\ООП\ZOO\SampleHierarchies.Enums\obj\Debug\net6.0\ref\SampleHierarchies.Enums.dll

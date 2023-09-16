@@ -68,7 +68,7 @@ namespace SampleHierarchies.Gui
                     new ScreenLineEntry { Text = "2. Save" },
                 };
 
-                ScreenRender(list, "White");
+                ScreenRender(list);
 
                 SwitchHandler();
                 return;
@@ -127,8 +127,10 @@ namespace SampleHierarchies.Gui
             Console.WriteLine("Color of orungutans screen:");
             string OrungutanScreenColor = ChoisColor();
 
+            Console.WriteLine("Color of elephant screen:");
+            string ElephantScreenColor = ChoisColor();
 
-            Settings settings = new Settings(MainScreenColor, AnimalsScreenColor, MammalSpecies, DogsScreenColor, OrungutanScreenColor);
+            Settings settings = new Settings(MainScreenColor, AnimalsScreenColor, MammalSpecies, DogsScreenColor, OrungutanScreenColor, ElephantScreenColor);
 
             return settings;
 

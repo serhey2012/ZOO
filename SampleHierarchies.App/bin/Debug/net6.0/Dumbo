@@ -1,0 +1,22 @@
+{
+	"Mammals":	{
+		"Dogs":	[
+			
+		],
+		"Orungutans":	[
+			
+		],
+		"Elephants":	[
+			{
+				"Height":	12.0,
+				"Weight":	12.0,
+				"TuskLenght":	12.0,
+				"LongLifespan":	12,
+				"SocialBehavior":	"12",
+				"Species":	2,
+				"Name":	"Dumbo",
+				"Age":	12
+			}
+		]
+	}
+}

@@ -73,7 +73,8 @@ public sealed class MainScreen : Screen
 
             Console.WriteLine();
 
-            ScreenRender(list, _dataService.settings.MainScreenColor);
+            ScreenDefinitionJson = _dataService.settings.MainScreenColor;
+            ScreenRender(list);
 
             SwitchHandler();
             

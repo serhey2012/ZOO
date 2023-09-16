@@ -14,6 +14,8 @@ public class Mammals : IMammals
     public List<IDog> Dogs { get; set; }
     public List<IOrungutan> Orungutans { get; set; }
 
+    public List<IElephant> Elephants { get; set; }
+
     #endregion // IMammals Implementation
 
     #region Ctors
@@ -24,7 +26,8 @@ public class Mammals : IMammals
     public Mammals()
     {
         Dogs = new List<IDog>();
-        Orungutans = new List<IOrungutan>();    
+        Orungutans = new List<IOrungutan>();  
+        Elephants = new List<IElephant>();
 
     }
 

@@ -19,6 +19,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Interfaces": "1.0.0"
         },
         "compile": {
@@ -31,6 +32,9 @@
       "SampleHierarchies.Enums/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "compile": {
           "bin/placeholder/SampleHierarchies.Enums.dll": {}
         },
@@ -41,6 +45,9 @@
       "SampleHierarchies.Helpers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "compile": {
           "bin/placeholder/SampleHierarchies.Helpers.dll": {}
         },
@@ -52,6 +59,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Enums": "1.0.0"
         },
         "compile": {
@@ -138,6 +146,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Newtonsoft.Json >= 13.0.3",
       "SampleHierarchies.Interfaces >= 1.0.0",
       "SampleHierarchies.Services >= 1.0.0"
     ]
@@ -148,11 +157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj",
       "projectName": "SampleHierarchies.Gui",
-      "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj",
+      "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Gui\\obj\\",
+      "outputPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Gui\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,11 +178,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj"
+            "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj"
             },
-            "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj": {
-              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj"
+            "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj": {
+              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj"
             }
           }
         }
@@ -187,6 +196,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

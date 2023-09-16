@@ -16,5 +16,7 @@ public interface IMammals
 
     List<IOrungutan> Orungutans { get; set; }
 
+    List<IElephant> Elephants { get; set; }
+
     #endregion // Interface Members
 }

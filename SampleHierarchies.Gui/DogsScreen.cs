@@ -87,7 +87,8 @@ public sealed class DogsScreen : Screen
                 new ScreenLineEntry { Text = "2. Modify existing dog" }
             };
 
-            ScreenRender(list, _dataService.settings.DogsScreenColor);
+            ScreenDefinitionJson = _dataService.settings.DogsScreenColor;
+            ScreenRender(list);
 
             SwitchHandler();
 

@@ -8,9 +8,8 @@ namespace SampleHierarchies.Gui
 {
     public class ScreenDefinition
     {
-        public List<ScreenLineEntry>? LineEntries { get; set; } 
-
-
-       
+        public string ScreenName { get; set; }
+        public string ScreenType { get; set; }
+        public List<ScreenLineEntry>? LineEntries { get; set; }     
     }
 }

@@ -55,8 +55,8 @@ public sealed class AnimalsScreen : Screen
             };
             Console.WriteLine();
 
-
-            ScreenRender(list, _dataService.settings.MammalSpeciesColor);
+            ScreenDefinitionJson = _dataService.settings.MammalSpeciesColor;
+            ScreenRender(list);
 
             SwitchHandler();
 

@@ -653,6 +653,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Interfaces": "1.0.0"
         },
         "compile": {
@@ -665,6 +666,9 @@
       "SampleHierarchies.Enums/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "compile": {
           "bin/placeholder/SampleHierarchies.Enums.dll": {}
         },
@@ -676,6 +680,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Interfaces": "1.0.0",
           "SampleHierarchies.Services": "1.0.0"
         },
@@ -689,6 +694,9 @@
       "SampleHierarchies.Helpers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "compile": {
           "bin/placeholder/SampleHierarchies.Helpers.dll": {}
         },
@@ -700,6 +708,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
           "SampleHierarchies.Enums": "1.0.0"
         },
         "compile": {
@@ -1770,6 +1779,7 @@
     "net6.0": [
       "Microsoft.Extensions.DependencyInjection >= 8.0.0-preview.2.23128.3",
       "Microsoft.Extensions.Hosting >= 8.0.0-preview.2.23128.3",
+      "Newtonsoft.Json >= 13.0.3",
       "PeanutButter.TinyEventAggregator >= 3.0.107",
       "SampleHierarchies.Gui >= 1.0.0",
       "SampleHierarchies.Interfaces >= 1.0.0",
@@ -1782,11 +1792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.App\\SampleHierarchies.App.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.App\\SampleHierarchies.App.csproj",
       "projectName": "SampleHierarchies.App",
-      "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.App\\SampleHierarchies.App.csproj",
+      "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.App\\SampleHierarchies.App.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.App\\obj\\",
+      "outputPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1803,14 +1813,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj": {
-              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj"
+            "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj": {
+              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Gui\\SampleHierarchies.Gui.csproj"
             },
-            "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj"
+            "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Interfaces\\SampleHierarchies.Interfaces.csproj"
             },
-            "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj": {
-              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\Poland_Work--main\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj"
+            "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj": {
+              "projectPath": "C:\\Users\\User\\Downloads\\ООП\\ZOO\\SampleHierarchies.Services\\SampleHierarchies.Services.csproj"
             }
           }
         }
@@ -1832,6 +1842,10 @@
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
             "version": "[8.0.0-preview.2.23128.3, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           },
           "PeanutButter.TinyEventAggregator": {
             "target": "Package",

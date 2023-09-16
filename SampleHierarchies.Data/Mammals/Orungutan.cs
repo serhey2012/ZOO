@@ -13,7 +13,7 @@ namespace SampleHierarchies.Data.Mammals
 
         public override void MakeSound()
         {
-            Console.WriteLine("My name is: {0} and I am barking", Name);
+            Console.WriteLine("My name is: {0} and I am noise", Name);
         }
 
         /// <inheritdoc/>

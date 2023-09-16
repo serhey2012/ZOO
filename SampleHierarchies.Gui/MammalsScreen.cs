@@ -17,16 +17,19 @@ public sealed class MammalsScreen : Screen
 
     private OrangutanScreen _orangutanScreen;
 
+    private ElephantScreen _elephantScreen;
+
     private IDataService _dataService;
     /// <summary>
     /// Ctor.
     /// </summary>
     /// <param name="dataService">Data service reference</param>
     /// <param name="dogsScreen">Dogs screen</param>
-    public MammalsScreen(DogsScreen dogsScreen, OrangutanScreen orangutanScreen, IDataService dataService) : base(dataService)
+    public MammalsScreen(DogsScreen dogsScreen, OrangutanScreen orangutanScreen, ElephantScreen elephantScreen, IDataService dataService) : base(dataService)
     {
         _dogsScreen = dogsScreen;
         _orangutanScreen = orangutanScreen;
+        _elephantScreen = elephantScreen;
         _dataService = dataService;
     }
 
@@ -49,9 +52,11 @@ public sealed class MammalsScreen : Screen
                 new ScreenLineEntry{ Text = "0. Exit"},
                 new ScreenLineEntry{ Text = "1. Dogs"},
                 new ScreenLineEntry{ Text = "2. Orangutan"},
+                new ScreenLineEntry{ Text = "3. Elephant"},
             };
 
-            ScreenRender(list, _dataService.settings.MammalSpeciesColor);
+            ScreenDefinitionJson = _dataService.settings.MammalSpeciesColor;
+            ScreenRender(list);
 
             SwitchHandler();
             return;
@@ -74,6 +79,9 @@ public sealed class MammalsScreen : Screen
 
                 case MammalsScreenChoices.Orangutan:
                     _orangutanScreen.Show();
+                    break;
+                case MammalsScreenChoices.Elephant:
+                    _elephantScreen.Show();
                     break;
 
                 case MammalsScreenChoices.Exit:
